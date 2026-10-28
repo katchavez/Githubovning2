@@ -17,7 +17,11 @@ public class Main {
 
     public static long roundB(double b) {
         return Math.round(b);
-}
+    }
+
+    public static int parseIntA(String a) {
+        return Integer.parseInt(a);
+    }
 
         static void main() {
 
@@ -26,6 +30,8 @@ public class Main {
 
         IO.println(roundB(3.6));
         IO.println(roundA(3.4));
+
+        IO.println(parseIntA("42") + 8);
 
     }
 }
