@@ -42,6 +42,11 @@ public class Main {
             return (b);
         }
         throw new IllegalArgumentException("B kan inte vara mindre än 0");
+    public static int validateA(int a) {
+        if (a >= 0) {
+            return a;
+        }
+        throw new IllegalArgumentException("a cannot be smaller than 0");
     }
 
     static void main() {
@@ -68,6 +73,13 @@ public class Main {
             IO.println(e.getMessage());
 
     }
+        IO.println(validateA(5));
+        IO.println(validateA(0));
+        try {
+            IO.println(validateA(-1));
+        } catch (IllegalArgumentException e) {
+            IO.println(e.getMessage());
+        }
 
     }
 }
