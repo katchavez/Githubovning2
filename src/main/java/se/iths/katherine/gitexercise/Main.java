@@ -11,7 +11,6 @@ public class Main {
         return Math.max(a, b);
 
     }
-
     public static long roundA(double a) {
         return Math.round(a);
     }
@@ -20,12 +19,11 @@ public class Main {
         return Math.round(b);
     }
 
-    public static int parseIntB(String b) {
-        return Integer.parseInt(b);
-
+    public static int parseIntA(String a) {
+        return Integer.parseInt(a);
     }
 
-    static void main() {
+        static void main() {
 
         IO.println(maxA(4, 9));
         IO.println(maxB(4, 9));
@@ -33,7 +31,7 @@ public class Main {
         IO.println(roundB(3.6));
         IO.println(roundA(3.4));
 
-        IO.println(parseIntB("42"));
+        IO.println(parseIntA("42") + 8);
 
     }
 }
