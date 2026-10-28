@@ -60,6 +60,7 @@ public class Main {
 
         IO.println(validateA(5));
         IO.println(validateA(0));
+
         try {
             IO.println(validateA(-1));
         } catch (IllegalArgumentException e) {
