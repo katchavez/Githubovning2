@@ -8,7 +8,11 @@ public class Main {
 
     public static int maxB(int a, int b) {
         return Math.max(a, b);
-}
+    }
+
+    public static long roundA(double a) {
+        return Math.round(a);
+    }
 
     public static long roundB(double b) {
         return Math.round(b);
@@ -19,6 +23,8 @@ public class Main {
         IO.println(maxA(4, 9));
         IO.println(maxB(4, 9));
         IO.println(3.6);
+
+        IO.println(roundA(3.4));
 
     }
 }
