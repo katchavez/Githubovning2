@@ -33,6 +33,10 @@ public class Main {
         return Double.parseDouble(a);
     }
 
+    public static double parseDoubleB(String b) {
+        return Double.parseDouble(b);
+    }
+
     static void main() {
 
         IO.println(maxA(4, 9));
@@ -45,6 +49,7 @@ public class Main {
         IO.println(parseIntA("42") + 8);
 
         IO.println(parseDoubleA("12.5") + 0.5);
+        IO.println(parseDoubleB("12.5") + 0.5);
 
     }
 }
