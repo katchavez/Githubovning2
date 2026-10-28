@@ -37,6 +37,13 @@ public class Main {
         return Double.parseDouble(b);
     }
 
+    public static int validateA(int a) {
+        if (a >= 0) {
+            return a;
+        }
+        throw new IllegalArgumentException("a cannot be smaller than 0");
+    }
+
     static void main() {
 
         IO.println(maxA(4, 9));
@@ -50,6 +57,14 @@ public class Main {
 
         IO.println(parseDoubleA("12.5") + 0.5);
         IO.println(parseDoubleB("12.5") + 0.5);
+
+        IO.println(validateA(5));
+        IO.println(validateA(0));
+        try {
+            IO.println(validateA(-1));
+        } catch (IllegalArgumentException e) {
+            IO.println(e.getMessage());
+        }
 
     }
 }
